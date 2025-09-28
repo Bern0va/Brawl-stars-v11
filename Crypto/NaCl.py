@@ -76,4 +76,5 @@ class NaCl:
 			else:
 				self.encryptNonce.increment()
 				encrypted = crypto_secretbox(payload, bytes(self.encryptNonce), self.shared_en)
+
 				return encrypted
